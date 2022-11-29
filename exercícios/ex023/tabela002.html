@@ -14,6 +14,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -21,9 +22,26 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot {
-            background-color: gray;
+            background-color: #383838;
             color: white;
+        }
+        
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgrey
         }
 
         td.num {
@@ -37,6 +55,7 @@
     <!-- 
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 TR, TD ,TH
             TBODY
@@ -45,10 +64,11 @@
                 TR, TD, TH
      -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -163,10 +183,19 @@
         </tbody>
         <tfoot>
             <tr>
-                <td>Total de Habitantes</td>
+                <th scope="row">Total de Habitantes</th>
                 <td><strong>210.174.125</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus amet totam esse magni perspiciatis possimus temporibus sint, nam, labore et porro rem aliquam consequatur, excepturi tempore dolores ad veniam fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, minus! Corrupti eum voluptate aliquam, maiores porro repellat suscipit blanditiis eos ipsa, inventore sequi deserunt animi aperiam similique quaerat. Repudiandae, quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, magnam porro. Voluptatibus consequuntur veniam ipsa earum dolorum! Architecto iure odit deleniti minus nostrum, consequatur in? Architecto fugit provident beatae quae? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias nesciunt, maxime ea similique molestias odit laborum animi vero dicta ex cum itaque voluptates asperiores atque, doloremque ad incidunt, recusandae id?</p>
+    
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus amet totam esse magni perspiciatis possimus temporibus sint, nam, labore et porro rem aliquam consequatur, excepturi tempore dolores ad veniam fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, minus! Corrupti eum voluptate aliquam, maiores porro repellat suscipit blanditiis eos ipsa, inventore sequi deserunt animi aperiam similique quaerat. Repudiandae, quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, magnam porro. Voluptatibus consequuntur veniam ipsa earum dolorum! Architecto iure odit deleniti minus nostrum, consequatur in? Architecto fugit provident beatae quae? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias nesciunt, maxime ea similique molestias odit laborum animi vero dicta ex cum itaque voluptates asperiores atque, doloremque ad incidunt, recusandae id?</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus amet totam esse magni perspiciatis possimus temporibus sint, nam, labore et porro rem aliquam consequatur, excepturi tempore dolores ad veniam fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, minus! Corrupti eum voluptate aliquam, maiores porro repellat suscipit blanditiis eos ipsa, inventore sequi deserunt animi aperiam similique quaerat. Repudiandae, quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, magnam porro. Voluptatibus consequuntur veniam ipsa earum dolorum! Architecto iure odit deleniti minus nostrum, consequatur in? Architecto fugit provident beatae quae? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias nesciunt, maxime ea similique molestias odit laborum animi vero dicta ex cum itaque voluptates asperiores atque, doloremque ad incidunt, recusandae id?</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus amet totam esse magni perspiciatis possimus temporibus sint, nam, labore et porro rem aliquam consequatur, excepturi tempore dolores ad veniam fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, minus! Corrupti eum voluptate aliquam, maiores porro repellat suscipit blanditiis eos ipsa, inventore sequi deserunt animi aperiam similique quaerat. Repudiandae, quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, magnam porro. Voluptatibus consequuntur veniam ipsa earum dolorum! Architecto iure odit deleniti minus nostrum, consequatur in? Architecto fugit provident beatae quae? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias nesciunt, maxime ea similique molestias odit laborum animi vero dicta ex cum itaque voluptates asperiores atque, doloremque ad incidunt, recusandae id?</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus amet totam esse magni perspiciatis possimus temporibus sint, nam, labore et porro rem aliquam consequatur, excepturi tempore dolores ad veniam fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, minus! Corrupti eum voluptate aliquam, maiores porro repellat suscipit blanditiis eos ipsa, inventore sequi deserunt animi aperiam similique quaerat. Repudiandae, quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, magnam porro. Voluptatibus consequuntur veniam ipsa earum dolorum! Architecto iure odit deleniti minus nostrum, consequatur in? Architecto fugit provident beatae quae? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias nesciunt, maxime ea similique molestias odit laborum animi vero dicta ex cum itaque voluptates asperiores atque, doloremque ad incidunt, recusandae id?</p>
 </body>
 </html>
